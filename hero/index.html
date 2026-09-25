@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Capture Photography: portrait and lifestyle photography." />
+    <title>Capture Photography</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="home" aria-roledescription="carousel" aria-label="Featured photography">
+      <!-- Slides (placeholder photos from Unsplash, swap for your own) -->
+      <div class="slides">
+        <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+          <img
+            src="img/hero-1.jpg"
+            alt="Silhouette of a woman in profile against a sunset"
+            style="object-position: 50% 38%"
+          />
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+          <img
+            src="img/hero-2.jpg"
+            alt="Woman smiling through tall dry grass"
+            style="object-position: 50% 45%"
+            loading="lazy"
+          />
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+          <img
+            src="img/hero-3.jpg"
+            alt="Silhouette of a woman looking up at an orange sky"
+            style="object-position: 50% 62%"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__links nav__links--left">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <a class="nav__brand" href="#home">Capture Photography</a>
+
+        <ul class="nav__links nav__links--right">
+          <li><a href="#info">Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+
+        <ul class="nav__mobile" id="mobile-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Headline -->
+      <h1 class="hero__title">
+        <span>Capture Your</span>
+        <span>Moment</span>
+      </h1>
+
+      <!-- Carousel controls -->
+      <button class="arrow arrow--prev" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8" /></svg>
+      </button>
+      <button class="arrow arrow--next" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" /></svg>
+      </button>
+
+      <div class="dots"></div>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
